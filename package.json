@@ -1,0 +1,34 @@
+{
+  "name": "planning-grosbill",
+  "productName": "Planning Grosbill",
+  "version": "1.0.0",
+  "description": "Application de planning autonome Grosbill",
+  "main": "main.js",
+  "author": "Amaury Ollivier",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win portable"
+  },
+  "devDependencies": {
+    "electron": "^31.0.0",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.grosbill.planning",
+    "productName": "Planning Grosbill",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "main.js",
+      "index.html"
+    ],
+    "win": {
+      "target": "portable",
+      "icon": "build/icon.ico"
+    },
+    "portable": {
+      "artifactName": "Planning-Grosbill-portable.exe"
+    }
+  }
+}
