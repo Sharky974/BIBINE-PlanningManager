@@ -28,7 +28,7 @@
       "icon": "build/icon.ico"
     },
     "portable": {
-      "artifactName": "Planning-Grosbill-portable.exe"
+      "artifactName": "Planning Grosbill.exe"
     }
   }
 }
