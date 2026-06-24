@@ -2,7 +2,7 @@
 
 Application de gestion de planning hebdomadaire pour magasin, en version Windows autonome (`.exe` portable, sans installation). Toutes les données restent en local sur le poste.
 
-**Version actuelle : v1.3.0**
+**Version actuelle : v2.0.1**
 
 ---
 
@@ -20,8 +20,10 @@ Depuis la version **1.2.0**, l'application intègre un assistant de configuratio
 
 Au premier lancement, un menu de configuration permet de préparer l'application avant d'accéder au planning :
 
-- Choix du magasin via un **menu déroulant**.
-- Liste des magasins Grosbill intégrée : Paris 13e, Paris 15e, Paris 16e, Montigny-lès-Cormeilles, Sainte-Geneviève-des-Bois, Plan de Campagne, Roncq, Villeneuve-d'Ascq, Lyon 3e, Saint-Priest et Rouen Barentin.
+- Choix de l'**enseigne** via deux onglets : **Grosbill** ou **Cybertek**. L'application adopte alors automatiquement le logo, la couleur d'accent et la liste de magasins de l'enseigne sélectionnée.
+- Choix du magasin via un **menu déroulant** adapté à l'enseigne.
+- Magasins **Grosbill** : Paris 13e, Paris 15e, Paris 16e, Montigny-lès-Cormeilles, Sainte-Geneviève-des-Bois, Plan de Campagne, Roncq, Villeneuve-d'Ascq, Lyon 3e, Saint-Priest, Rouen Barentin.
+- Magasins **Cybertek** : Agen, Anglet, Angoulins, Bègles, Bordeaux-Lac, Brest, Labège, Mérignac, Montauban, Nantes, Paris 2, Pau, Perpignan, Portet, St-Nazaire, Toulon, Toulouse-Nord.
 - Option **Autre magasin…** avec champ libre pour saisir un nom personnalisé.
 - Création de l'équipe dès le démarrage : nom, volume horaire de contrat et statut **Employé confirmé**.
 - Définition des jours d'ouverture et des créneaux matin / après-midi.
@@ -103,11 +105,21 @@ Ce logiciel n'est **pas** développé par le groupe Cybertek. Il s'agit d'un out
 
 ## Changelog
 
+### v2.0.1
+
+- **Choix de l'enseigne au démarrage** : deux onglets **Grosbill** / **Cybertek** dans l'assistant de configuration. Selon l'enseigne retenue, l'application bascule automatiquement le **logo**, la **couleur d'accent** et la **liste des magasins** — y compris dans l'export PDF du planning et l'affiche horaires.
+- **17 magasins Cybertek** intégrés à la liste déroulante (en plus des magasins Grosbill).
+- **Thème couleur par enseigne** : accent rouge Grosbill (`#D81E2C`) ou jaune Cybertek (`#FFCF00`, avec texte foncé sur les aplats, comme l'identité Cybertek). Les alertes et erreurs restent en rouge dans les deux cas pour rester lisibles. Géré via une variable de thème unique appliquée à toute l'interface.
+- **Mode sombre généralisé** : le thème sombre s'applique aussi à l'écran de configuration (bouton clair / sombre dédié), et le logo Cybertek (noir) passe automatiquement en blanc sur fond sombre pour rester lisible.
+- **Icône d'application** : logo dédié (calendrier + circuit + validation) utilisé comme favicon de l'application.
+- **Champ libre « Description »** dans l'en-tête (anciennement la période), éditable et sauvegardé.
+
 ### v1.3.0
 
-- **Alertes de conformité du volume horaire** : détection automatique des employés en **dépassement** ou en **déficit** par rapport à leur contrat hebdomadaire, ainsi que des employés **sans aucune heure planifiée**. Les écarts sont gradués — orange « à ajuster » (jusqu'à 2 h), rouge « hors contrat » (au-delà de 2 h)
-- **Nettoyage du code** : retrait de fonctions de sauvegarde / restauration JSON qui n'étaient reliées à aucune action, et correction du libellé du bouton de réinitialisation
-- **Bug Fix** : Correction de plusieurs bug rencontré lors de l'utilisation.
+- **Alertes de conformité du volume horaire** : détection automatique des employés en **dépassement** ou en **déficit** par rapport à leur contrat hebdomadaire, ainsi que des employés **sans aucune heure planifiée**. Les écarts sont gradués — orange « à ajuster » (jusqu'à 2 h), rouge « hors contrat » (au-delà de 2 h).
+- **Démarrage épuré** : suppression des employés d'exemple présents dans le code ; l'application s'ouvre désormais directement sur l'assistant de configuration.
+- **Nettoyage du code** : retrait de fonctions de sauvegarde / restauration JSON qui n'étaient reliées à aucune action, et correction du libellé du bouton de réinitialisation.
+- **Publication GitHub** : workflow de build mis à jour pour générer automatiquement une *Release* avec l'`.exe` lors d'un tag de version.
 
 ### v1.2.0
 
