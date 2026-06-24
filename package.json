@@ -1,8 +1,8 @@
 {
-  "name": "planning-grosbill",
-  "productName": "Planning Grosbill",
-  "version": "1.2.0",
-  "description": "Logiciel de gestion planning",
+  "name": "bibine",
+  "productName": "Bibine - Planning Manager",
+  "version": "2.1.0",
+  "description": "Bibine - Planning Manager — Logiciel de gestion planning Cybertek et Grosbill",
   "main": "main.js",
   "author": "Amaury Ollivier",
   "scripts": {
@@ -14,8 +14,8 @@
     "electron-builder": "^24.13.3"
   },
   "build": {
-    "appId": "com.grosbill.planning",
-    "productName": "Planning Grosbill",
+    "appId": "com.bibine.app",
+    "productName": "Bibine - Planning Manager",
     "directories": {
       "output": "release"
     },
@@ -28,7 +28,7 @@
       "icon": "build/icon.ico"
     },
     "portable": {
-      "artifactName": "Planning Grosbill.exe"
+      "artifactName": "BIBINE.exe"
     }
   }
 }
