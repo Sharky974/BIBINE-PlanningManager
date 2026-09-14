@@ -496,8 +496,8 @@ function buildDoorSignHTML(){
 
 // ========== CONFIGURATION 1er LANCEMENT ==========
 const app=document.getElementById('app');
-const STORES=['Grosbill Paris 13e','Grosbill Paris 15e','Grosbill Paris 16e','Grosbill Montigny-lès-Cormeilles','Grosbill Sainte-Geneviève-des-Bois','Grosbill Plan de Campagne','Grosbill Roncq','Grosbill Villeneuve-d\'Ascq','Grosbill Lyon 3e','Grosbill Saint-Priest','Grosbill Rouen Barentin'];
-const STORES_CYBERTEK=['Cybertek Agen','Cybertek Anglet','Cybertek Angoulins','Cybertek Bègles','Cybertek Bordeaux-Lac','Cybertek Brest','Cybertek Labège','Cybertek Mérignac','Cybertek Montauban','Cybertek Nantes','Cybertek Paris 2','Cybertek Pau','Cybertek Perpignan','Cybertek Portet','Cybertek St-Nazaire','Cybertek Toulon','Cybertek Toulouse-Nord'];
+const STORES=['Grosbill Paris 13e','Grosbill Paris 15e','Grosbill Montigny-lès-Cormeilles','Grosbill Sainte-Geneviève-des-Bois','Grosbill Plan de Campagne','Grosbill Roncq','Grosbill Villeneuve-d\'Ascq','Grosbill Lyon 3e','Grosbill Saint-Priest','Grosbill Rouen Barentin'];
+const STORES_CYBERTEK=['Cybertek Agen','Cybertek Anglet','Cybertek Angoulins','Cybertek Bègles','Cybertek Bordeaux-Lac','Cybertek Brest','Cybertek Labège','Cybertek Mérignac','Cybertek Montauban','Cybertek Nantes','Cybertek Paris 2','Cybertek Paris 16e','Cybertek Pau','Cybertek Perpignan','Cybertek Portet','Cybertek St-Nazaire','Cybertek Toulon','Cybertek Toulouse-Nord'];
 function setupStores(){ return SETUP.brand==='cybertek'?STORES_CYBERTEK:STORES; }
 // État temporaire de l'assistant de configuration
 let SETUP={brand:'grosbill',store:STORES[0],custom:'',emps:[{name:'',contract:35,soloOk:false},{name:'',contract:35,soloOk:false}],hours:DEFAULT_HOURS(),openDays:[false,true,true,true,true,true,true]};
