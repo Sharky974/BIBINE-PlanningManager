@@ -2,7 +2,7 @@
 
 Application de gestion de planning hebdomadaire pour magasin, en version Windows autonome (`.exe` portable, sans installation). Toutes les données restent en local sur le poste.
 
-**Version actuelle : v2.1.3**
+**Version actuelle : v2.1.4**
 
 ---
 
@@ -22,8 +22,8 @@ Au premier lancement, un menu de configuration permet de préparer l'application
 
 - Choix de l'**enseigne** via deux onglets : **Grosbill** ou **Cybertek**. L'application adopte alors automatiquement le logo, la couleur d'accent et la liste de magasins de l'enseigne sélectionnée.
 - Choix du magasin via un **menu déroulant** adapté à l'enseigne.
-- Magasins **Grosbill** : Paris 13e, Paris 15e, Paris 16e, Montigny-lès-Cormeilles, Sainte-Geneviève-des-Bois, Plan de Campagne, Roncq, Villeneuve-d'Ascq, Lyon 3e, Saint-Priest, Rouen Barentin.
-- Magasins **Cybertek** : Agen, Anglet, Angoulins, Bègles, Bordeaux-Lac, Brest, Labège, Mérignac, Montauban, Nantes, Paris 2, Pau, Perpignan, Portet, St-Nazaire, Toulon, Toulouse-Nord.
+- Magasins **Grosbill** : Paris 13e, Paris 15e, Montigny-lès-Cormeilles, Sainte-Geneviève-des-Bois, Plan de Campagne, Roncq, Villeneuve-d'Ascq, Lyon 3e, Saint-Priest, Rouen Barentin.
+- Magasins **Cybertek** : Agen, Anglet, Angoulins, Bègles, Bordeaux-Lac, Brest, Labège, Mérignac, Montauban, Nantes, Paris 2, Paris 16e, Pau, Perpignan, Portet, St-Nazaire, Toulon, Toulouse-Nord.
 - Option **Autre magasin…** avec champ libre pour saisir un nom personnalisé.
 - Création de l'équipe dès le démarrage : nom, volume horaire de contrat et statut **Employé confirmé**.
 - Définition des jours d'ouverture et des créneaux matin / après-midi.
@@ -104,6 +104,10 @@ Ce logiciel n'est **pas** développé par le groupe Cybertek. Il s'agit d'un out
 ---
 
 ## Changelog
+
+### v2.1.4
+
+- **Magasin Paris 16e transféré de l'enseigne Grosbill vers Cybertek** : « Grosbill Paris 16e » retiré de la liste déroulante Grosbill, « Cybertek Paris 16e » ajouté à la liste déroulante Cybertek.
 
 ### v2.1.3
 
